@@ -1,25 +1,46 @@
-<!DOCTYPE html>
-<html>
-<body>
+    <html>  
+    <head>  
+    <script type="text/javascript" src="script.js"></script>  
+    </head>  
+    <body>  
+    <p>Welcome to JavaScript</p>  
 
-<h2>JavaScript Prompt</h2>
 
-<button onclick="myFunction()">Try it</button>
+    <form onsubmit="return results();">  
+    <input type="button" value="click" onclick="msg()"/>  
+    </form>  
+  
 
+
+    <form onsubmit="return results();" method="post">
+    <p>
+  Click the button to calculate x.
+  <button onclick="myFunction()">Try it</button>
+</p>
+<p>
+  Enter first number:
+  <input type="text" id="txt1" name="text1" value="1">
+  Enter second number:
+  <input type="text" id="txt2" name="text2" value="2">
+</p>
 <p id="demo"></p>
+    </form>
 
-<script>
-function myFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", "Harry Potter");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "Hello " + person + "! How are you today?";
-    }
-    document.getElementById("demo").innerHTML = txt;
-}
-</script>
 
-</body>
-</html>
+
+<form onsubmit="return results();" method="post">
+	<p>
+		Enter a number
+		<button onclick="myNumber()">Try it</button>
+		<input type="text" id="inputnumber" name="myNumber">
+	</p>
+
+</form>
+
+<form>
+<div id="example"></div>
+</form>
+
+
+    </body>  
+    </html>  
