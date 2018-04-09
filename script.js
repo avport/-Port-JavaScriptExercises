@@ -1,13 +1,14 @@
-function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
+//   function myFunction() {
+//   var txt;
+//   var person = prompt("Please enter your name:", "Harry Potter");
+
+//   if (person == null || person == "") {
+//     txt = "User cancelled the prompt.";
+//   } else {
+//     txt = "Hello " + person + "! How are you today?";
+//   }
+//   document.getElementById("demo").innerHTML = txt;
+// } 
 
 
 function addNumber() {
@@ -21,6 +22,7 @@ function addNumber() {
 
   document.getElementById("number").innerHTML = txt;
 }
+
 
 function wordPlay() {
   var result = "";
@@ -64,10 +66,40 @@ function nameGame() {
 console.log(result);
 document.getElementById("problem3answer").innerHTML = result;
 }
-
 }
 
 
+function foodSuggestion() {
+  var result = "";
+  var input = prompt("What time of day is it?"); 
+
+    if (input === "morning") {
+      console.log("Since it is morning, you should be eating breakfast. We suggest eggs and toast."); 
+      document.getElementById("problem4answer").innerHTML = result;
+    } else if (input === "noon") {
+      console.log ("Since it is noon, you should be eating lunch. We suggest a salad."); 
+      document.getElementById("problem4answer").innerHTML = result;
+    } else if (input === "evening") {
+      console.log ("Since it is evening, you should be eating dinner. We suggest chicken and rice."); 
+      document.getElementById("problem4answer").innerHTML = result;
+    } else {
+    console.log("Maybe just have a snack?"); 
+  } document.getElementById("problem4answer").innerHTML = result;
+} 
+    
+  
+      
+
+// if (stopLight === 'red') {
+//   console.log('Stop');
+// } else if (stopLight === 'yellow') {
+//   console.log('Slow down');
+// } else if (stopLight === 'green') {
+//   console.log('Go!');
+// } else {
+//   console.log('Caution, unknown!');
+// }
+   
 
 
 
