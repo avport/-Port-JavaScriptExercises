@@ -74,17 +74,16 @@ function foodSuggestion() {
   var input = prompt("What time of day is it?"); 
 
     if (input === "morning") {
-      console.log("Since it is morning, you should be eating breakfast. We suggest eggs and toast."); 
-      document.getElementById("problem4answer").innerHTML = result;
+      result = "Since it is morning, you should be eating breakfast. We suggest eggs and toast.";
     } else if (input === "noon") {
-      console.log ("Since it is noon, you should be eating lunch. We suggest a salad."); 
-      document.getElementById("problem4answer").innerHTML = result;
+      result = "Since it is noon, you should be eating lunch. We suggest a salad.";
     } else if (input === "evening") {
-      console.log ("Since it is evening, you should be eating dinner. We suggest chicken and rice."); 
-      document.getElementById("problem4answer").innerHTML = result;
+      result = "Since it is evening, you should be eating dinner. We suggest chicken and rice.";
     } else {
-    console.log("Maybe just have a snack?"); 
-  } document.getElementById("problem4answer").innerHTML = result;
+      result = "I'm not sure. Maybe just have a snack?";
+  } 
+      console.log(result); 
+  document.getElementById("problem4answer").innerHTML = result;
 } 
     
   
